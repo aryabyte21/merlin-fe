@@ -111,6 +111,11 @@ export default function LoginPage() {
               </Button>
             </form>
           </Form>
+          <div className="text-center mt-4">
+            <Button variant="link" asChild>
+              <a href="/trolley/login">Trolley Staff Login</a>
+            </Button>
+          </div>
         </CardContent>
       </Card>
     </div>
