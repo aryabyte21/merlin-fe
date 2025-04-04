@@ -177,7 +177,7 @@ export default function TrolleyDashboardPage() {
     <div className="min-h-screen bg-slate-50">
       <header className="bg-indigo-600 text-white px-4 py-3 shadow-md">
         <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-xl font-bold">Merlin Trolley</h1>
+          <h1 className="text-xl font-bold">Merlin Towing</h1>
           <div className="flex items-center gap-3">
             <span className="text-sm">
               Employee {user.employeeId}

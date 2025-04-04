@@ -65,7 +65,7 @@ export default function TrolleyLoginPage() {
               <Truck className="h-8 w-8 text-white" />
             </div>
           </div>
-          <CardTitle className="text-2xl text-center">Merlin Trolley</CardTitle>
+          <CardTitle className="text-2xl text-center">Merlin Towing</CardTitle>
           <CardDescription className="text-center">
             Login to update baggage trolley numbers
           </CardDescription>
