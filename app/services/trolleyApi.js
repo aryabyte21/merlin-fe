@@ -15,28 +15,14 @@ const api = axios.create({
   withCredentials: false, // Important for CORS
 });
 
-// Function to handle trolley guy login
-export const trolleyLogin = async (data) => {
-  try {
-    console.log("Sending trolley login request with data:", data);
-    const response = await api.post('/trolley-login/', data);
-    console.log("Received response:", response.data);
-    return response.data;
-  } catch (error) {
-    console.error("Trolley login error:", error);
-    
-    // Check connection errors
-    if (!error.response) {
-      throw new Error('Cannot connect to server. Please check your internet connection.');
-    }
-    
-    // Check specific status codes
-    if (error.response.status === 405) {
-      throw new Error('Server error: Method not allowed. Please contact support.');
-    }
-    
-    throw new Error(error.response?.data?.error || 'Login failed');
-  }
+
+export const trolleyLogin = async (checkerData) => {
+  // For now, simulate a successful login
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve({ success: true, user: checkerData });
+    }, 500);
+  });
 };
 
 // Function to fetch flight number suggestions
